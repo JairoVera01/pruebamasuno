@@ -1,5 +1,5 @@
 import icon1 from "../assets/images/IconosHero.png";
-import subrayadoRojo from "../assets/images/subrayadoRojo.png";
+import subrayadoRojo from "../assets/images/SubrayadoRojo.png";
 export default function Hero() {
   return (
     <section className="hero">
