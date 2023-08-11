@@ -5,7 +5,9 @@ import subrayadoRojo from "../assets/images/SubrayadoRojo.png";
 import { useState } from "react";
 import { Toaster, toast } from "sonner";
 import ReCAPTCHA from "react-google-recaptcha";
+import { useRef } from "react";
 export default function Hero() {
+  const recaptchaRef = useRef(null); // Crear una referencia al componente ReCAPTCHA
   //Referencia a la colección de "contactos" en Firestore
   const dataCollection = collection(db, "datamasuno");
   //Estados para almacenar los valores de los campos del formulario
@@ -75,6 +77,20 @@ export default function Hero() {
       toast.error("Debes completar el captcha");
       return;
     }
+
+    const resetForm = () => {
+      // Resetear los estados de los campos del formulario
+      setName("");
+      setLastName("");
+      setPhone("");
+      setEmail("");
+      setFavorite("");
+      setTerms(false);
+      setData(false);
+      setCaptchaValue("");
+      // Resetear el ReCAPTCHA
+      recaptchaRef.current.reset();
+    };
     try {
       setSending(true); // Cambiar el estado de "sending" a true
       await addDoc(dataCollection, {
@@ -92,14 +108,8 @@ export default function Hero() {
       console.log(error);
       toast.error("Error al enviar los datos");
     } finally {
-      setName("");
-      setLastName("");
-      setPhone("");
-      setEmail("");
-      setFavorite("");
-      setTerms(false);
-      setData(false);
       setSending(false); // Cambiar el estado de "sending" a false
+      resetForm(); // Llamar a la función resetForm
     }
   };
 
@@ -242,6 +252,7 @@ export default function Hero() {
             </div>
             <div className="hero__form-captcha">
               <ReCAPTCHA
+                ref={recaptchaRef} // Asignar la referencia al componente ReCAPTCHA
                 sitekey="6Lf1RZwnAAAAAMcqw9aTzvlz7nFH2n3ArnLvX_Wo"
                 onChange={(value) => setCaptchaValue(value)}
               />
@@ -252,6 +263,7 @@ export default function Hero() {
                 type="button"
                 className="hero__form-button"
                 onClick={() => sendData()}
+                
                 disabled={sending || captchaValue === ""} // Deshabilitar el botón si "sending" es true
               >
                 {sending ? "Enviando información..." : "Registrarme"}
