@@ -23,9 +23,45 @@
       grid-template-columns: repeat(2, 1fr);
     }
   }
-  &__content {
-    h1 {
+
+  &__title {
+    font-size: 45px;
+    font-weight: 500;
+    color: white;
+    @media (min-width: 768px) {
+      font-weight: 600;
+      font-size: 50px;
+    }
+    @media (min-width: 1024px) {
+      font-weight: 700;
+      font-size: 56px;
+    }
+  }
+  &__icons-1 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    &__text {
       color: white;
+      font-weight: 600;
+      font-size: 24px;
+    }
+  }
+  &__dates {
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    padding-top: 24px;
+    @media (min-width: 768px) {
+      font-size: 26px;
+      font-weight: 600;
+      padding-top: 32px;
+    }
+    @media (min-width: 1024px) {
+      font-size: 28px;
+      font-weight: 600;
+      padding-top: 38px;
     }
   }
 }
