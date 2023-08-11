@@ -242,7 +242,7 @@ export default function Hero() {
             </div>
             <div className="hero__form-captcha">
               <ReCAPTCHA
-                sitekey="6Lf1RZwnAAAAAMC3E3b1r1GxspFAa4pNGBJvUvKG"
+                sitekey="6Lf1RZwnAAAAAMcqw9aTzvlz7nFH2n3ArnLvX_Wo"
                 onChange={(value) => setCaptchaValue(value)}
               />
             </div>
