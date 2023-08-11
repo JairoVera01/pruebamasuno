@@ -1,5 +1,6 @@
 import Hero from "./components/Hero";
 import Steps from "./components/Steps";
+import Technologies from "./components/Technologies";
 import Layout from "./layouts/Layout";
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
       <Layout>
         <Hero />
         <Steps />
-        <h1>App</h1>
+        <Technologies />
       </Layout>
     </>
   );

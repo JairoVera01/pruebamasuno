@@ -1,0 +1,28 @@
+.technologies {
+  padding-bottom: 60px;
+  &__wrapper {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100px;
+    }
+  }
+  &__title {
+    padding-top: 42px;
+    color: #1a36a8;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    @media (min-width: 768px) {
+      font-size: 28px;
+    }
+    @media (min-width: 1024px) {
+      font-size: 32px;
+    }
+  }
+}
