@@ -71,7 +71,7 @@ export default function Hero() {
       toast.error("Debes aceptar los términos y condiciones");
       return;
     }
-    if (captchaValue === "") {
+    if (captchaValue == "") {
       toast.error("Debes completar el captcha");
       return;
     }
