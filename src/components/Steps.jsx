@@ -49,6 +49,10 @@ export default function Steps() {
               </svg>
             </div>
             <h2 className="steps__step-title-2">Registrate</h2>
+            <p className="steps__step-text">
+              Completa el formulario con tus datos personales y acepta los
+              términos.
+            </p>
           </div>
           <div className="steps__step">
             <h2 className="steps__step-title">Paso 2</h2>
@@ -86,7 +90,11 @@ export default function Steps() {
                 />
               </svg>
             </div>
-            <h2 className="steps__step-title-2">Registrate</h2>
+            <h2 className="steps__step-title-2">Recibe un cupón</h2>
+            <p className="steps__step-text">
+              Recibirás un correo electrónico donde podrás ver el cupón de
+              descuento.
+            </p>
           </div>
           <div className="steps__step">
             <h2 className="steps__step-title">Paso 3</h2>
@@ -133,6 +141,10 @@ export default function Steps() {
               </svg>
             </div>
             <h2 className="steps__step-title-2">Registrate</h2>
+            <p className="steps__step-text">
+              ¡Y listo! Podrás usarlo del 28 al 30 de Marzo por compras en
+              nuestra tienda online.
+            </p>
           </div>
         </div>
       </div>
