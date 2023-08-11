@@ -1,1 +1,17 @@
-// Fuentes 
+// ---------------
+// FONTS
+// ---------------
+
+// ---------------
+// COMMon
+// ---------------
+@import "./common.scss";
+
+// ---------------
+// COMPONENTS
+// ---------------
+@import "./components/reset";
+
+h1 {
+  color: red;
+}
