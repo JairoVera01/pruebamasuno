@@ -1,11 +1,12 @@
 import { db } from "../firebase/config";
 import { collection, addDoc } from "firebase/firestore";
-import icon1 from "../assets/images/IconosHero.png";
-import subrayadoRojo from "../assets/images/SubrayadoRojo.png";
-import { useState } from "react";
 import { Toaster, toast } from "sonner";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useRef } from "react";
+import icon1 from "../assets/images/IconosHero.png";
+import subrayadoRojo from "../assets/images/SubrayadoRojo.png";
+import { useState } from "react";
+import FormSello from "../assets/images/FormSello.png";
 export default function Hero() {
   const recaptchaRef = useRef(null); // Crear una referencia al componente ReCAPTCHA
   //Referencia a la colección de "contactos" en Firestore
@@ -150,6 +151,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="hero__form">
+          <img src={FormSello} alt="" className="hero__form-sello"/>
           <h2 className="hero__form-title">Completa tus datos</h2>
           <form action="">
             <div className="hero__form-container">
@@ -263,7 +265,6 @@ export default function Hero() {
                 type="button"
                 className="hero__form-button"
                 onClick={() => sendData()}
-                
                 disabled={sending || captchaValue === ""} // Deshabilitar el botón si "sending" es true
               >
                 {sending ? "Enviando información..." : "Registrarme"}

@@ -168,7 +168,24 @@
       line-height: 13.58px;
     }
   }
+  &__form-sello {
+    position: absolute;
+    top: -4%;
+    left: 76%;
+    width: 100px;
+    @media (min-width: 992px) {
+      position: absolute;
+      top: -7%;
+      left: 86%;
+      width: 129px;
+    }
+  }
+  &__form-captcha {
+    display: block;
+    width: 80px;
+  }
   &__form {
+    position: relative;
     background-color: white;
     border-radius: 32px;
     padding-top: 18px;
