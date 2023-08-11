@@ -1,0 +1,47 @@
+.steps {
+  padding-top: 60px;
+  overflow: hidden;
+  &__separator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 65px;
+      height: 1px;
+      left: 0px;
+      background-color: #1a36a8;
+
+      border-radius: 5px;
+      @media (min-width: 992px) {
+        width: 550px;
+        height: 2px;
+        top: 50%;
+        bottom: 0;
+        left: 0;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 12%;
+      width: 65px;
+      height: 1px;
+      background-color: #1a36a8;
+
+      border-radius: 5px;
+      @media (min-width: 992px) {
+        width: 550px;
+        height: 2px;
+        top: 50%;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+}
