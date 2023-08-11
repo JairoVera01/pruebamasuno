@@ -1,5 +1,5 @@
 import iconSteps from "../assets/images/IconSteps.png";
-import subrayadoRojo from "../assets/images/subrayadoRojo.png";
+import subrayadoRojo from "../assets/images/SubrayadoRojo.png";
 export default function Steps() {
   return (
     <section className="steps container">
