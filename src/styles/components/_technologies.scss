@@ -3,15 +3,32 @@
   &__wrapper {
     display: flex;
 
+    position: relative;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    img {
-      width: 100px;
+    padding-bottom: 2rem;
+  }
+  &__logomasuno {
+    width: 100px;
+  }
+  &__subrayadorojo {
+    display: none;
+    @media (min-width: 768px) {
+      display: none;
+    }
+    @media (min-width: 1024px) {
+      position: absolute;
+      display: flex;
+
+      width: 35%;
+      left: 33.5%;
+      top: 72%;
     }
   }
   &__title {
     padding-top: 42px;
+    padding-bottom: 3rem;
     color: #1a36a8;
     text-align: center;
     font-size: 24px;
