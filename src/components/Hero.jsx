@@ -4,6 +4,7 @@ import icon1 from "../assets/images/IconosHero.png";
 import subrayadoRojo from "../assets/images/SubrayadoRojo.png";
 import { useState } from "react";
 import { Toaster, toast } from "sonner";
+import ReCAPTCHA from "react-google-recaptcha";
 export default function Hero() {
   //Referencia a la colección de "contactos" en Firestore
   const dataCollection = collection(db, "datamasuno");
@@ -15,6 +16,7 @@ export default function Hero() {
   const [favorite, setFavorite] = useState("");
   const [terms, setTerms] = useState(false);
   const [data, setData] = useState(false);
+  const [captchaValue, setCaptchaValue] = useState("");
   const [sending, setSending] = useState(false); // Nuevo estado para enviar formulario
   //Funcion para obtener fecha y hora
   const getDateTime = () => {
@@ -235,13 +237,19 @@ export default function Hero() {
                 </label>
               </div>
             </div>
+            <div className="hero__form-captcha">
+              <ReCAPTCHA
+                sitekey="TU_CLAVE_DE_SITIO"
+                onChange={(value) => setCaptchaValue(value)}
+              />
+            </div>
             <div className="hero__form-button-container">
               <Toaster richColors duration={5000} position="top-right" />
               <button
                 type="button"
                 className="hero__form-button"
                 onClick={() => sendData()}
-                disabled={sending} // Deshabilitar el botón si "sending" es true
+                disabled={sending || captchaValue === ""} // Deshabilitar el botón si "sending" es true
               >
                 {sending ? "Enviando información..." : "Registrarme"}
               </button>
