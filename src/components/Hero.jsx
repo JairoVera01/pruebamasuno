@@ -22,6 +22,14 @@ export default function Hero() {
                   <span>CYBER DAY</span>
                 </span>
               </div>
+              <div className="hero__disclamer">
+                <p>
+                  Aplicamos el descuento mediante un código que se te eviará a
+                  tu correo registrado.{" "}
+                </p>
+                <p>Cupón válido del 28 al 30 de marzo.</p>
+                <p>*Aplican términos y condiciones</p>
+              </div>
             </div>
           </div>
         </div>

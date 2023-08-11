@@ -103,7 +103,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
     @media (min-width: 768px) {
       flex-direction: row;
     }
@@ -136,6 +136,16 @@
     span {
       color: #db0fa8;
       font-weight: 800;
+    }
+  }
+  &__disclamer {
+    p {
+      color: #003383;
+      text-align: center;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 13.58px;
     }
   }
 }
