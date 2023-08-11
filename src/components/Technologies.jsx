@@ -38,7 +38,7 @@ export default function Technologies() {
             <SplideSlide>
               <div className="technologies__slide">
                 <div className="technologies__slide__content">
-                  <img src={iconslide1} alt="" />
+                  <img src={iconslide1} alt="Icono 1 Slider 1" />
                   <h3 className="technologies__slide-title">PHP</h3>
                   <p className="technologies__slide-text">
                     Lorem ipsum dolor sit amet consectetur. Cursus cursus erat
@@ -50,14 +50,14 @@ export default function Technologies() {
                     Ver tecnología
                   </button>
                 </div>
-                <img src={slide1} alt="" />
+                <img src={slide1} alt="Imagen 1 Slider 1" />
               </div>
             </SplideSlide>
             <SplideSlide>
               {" "}
               <div className="technologies__slide">
                 <div className="technologies__slide__content">
-                  <img src={iconslide1} alt="" />
+                  <img src={iconslide1} alt="Icono 2 Slider 2" />
                   <h3 className="technologies__slide-title">Flutter</h3>
                   <p className="technologies__slide-text">
                     Lorem ipsum dolor sit amet consectetur. Cursus cursus erat
@@ -69,14 +69,14 @@ export default function Technologies() {
                     Ver tecnología
                   </button>
                 </div>
-                <img src={slide2} alt="" />
+                <img src={slide2} alt="Imagen 2 Slider 2" />
               </div>
             </SplideSlide>
             <SplideSlide>
               {" "}
               <div className="technologies__slide">
                 <div className="technologies__slide__content">
-                  <img src={iconslide1} alt="" />
+                  <img src={iconslide1} alt="Imagen 3 Slider 3" />
                   <h3 className="technologies__slide-title">Diseño UX/UI</h3>
                   <p className="technologies__slide-text">
                     Lorem ipsum dolor sit amet consectetur. Cursus cursus erat
@@ -88,7 +88,7 @@ export default function Technologies() {
                     Ver tecnología
                   </button>
                 </div>
-                <img src={slide3} alt="" />
+                <img src={slide3} alt="Imagen 3 Slider 3" />
               </div>
             </SplideSlide>
           </Splide>
