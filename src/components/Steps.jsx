@@ -1,4 +1,5 @@
 import iconSteps from "../assets/images/IconSteps.png";
+import subrayadoRojo from "../assets/images/subrayadoRojo.png";
 export default function Steps() {
   return (
     <section className="steps container">
@@ -6,10 +7,11 @@ export default function Steps() {
         <img src={iconSteps} alt="" />
       </div>
       <div className="steps__content">
-        <div>
+        <div className="steps__wrapper">
           <h2 className="steps__title">
             ¿Como obtengo el descuento por Cyber Days?
           </h2>
+          <img src={subrayadoRojo} alt="" />
           <span className="steps__subtitle">
             Para adquirir nuestro descuento especial por
             <span className="steps__subtitle--mod"> Cyber Days </span>

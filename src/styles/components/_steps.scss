@@ -49,6 +49,23 @@
     padding-top: 35px;
     padding-bottom: 35px;
   }
+  &__wrapper {
+    position: relative;
+    img {
+      display: none;
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1024px) {
+      img {
+        display: flex;
+        position: absolute;
+        width: 35%;
+        left: 33.5%;
+        top: 35%;
+      }
+    }
+  }
   &__title {
     font-size: 24px;
     font-style: normal;
@@ -65,7 +82,7 @@
   }
   &__subtitle {
     display: block;
-    padding-top: 4.5rem;
+    padding-top: 2.5rem;
     text-align: center;
     color: #595959;
     font-size: 16px;
@@ -77,9 +94,11 @@
     }
     @media (min-width: 768px) {
       font-size: 22px;
+      padding-top: 4.5rem;
     }
     @media (min-width: 1024px) {
       font-size: 24px;
+      padding-top: 4.5rem;
     }
   }
   &__steps {
