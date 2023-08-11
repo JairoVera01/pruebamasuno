@@ -22,11 +22,9 @@ export default function Hero() {
     const day = date.getDate();
     const month = date.getMonth() + 1;
     const year = date.getFullYear();
-
     const hours = date.getHours();
     const minutes = date.getMinutes();
     const seconds = date.getSeconds();
-
     return `${day}/${month}/${year} ${hours}:${minutes}:${seconds}`;
   };
 
@@ -114,7 +112,6 @@ export default function Hero() {
             </h1>
             <img src={subrayadoRojo} alt="Linea Roja de subrayado" />
           </div>
-
           <p className="hero__dates">Del 28 al 30 de marzo</p>
           <div className="hero__cupon">
             <div className="hero__border">
