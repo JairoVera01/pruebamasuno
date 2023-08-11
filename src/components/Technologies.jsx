@@ -32,8 +32,8 @@ export default function Technologies() {
               <div className="technologies__slide">
                 <div className="technologies__slide__content">
                   <img src={iconslide1} alt="" />
-                  <h3>PHP</h3>
-                  <p>
+                  <h3 className="technologies__slide-title">PHP</h3>
+                  <p className="technologies__slide-text">
                     Lorem ipsum dolor sit amet consectetur. Cursus cursus erat
                     massa vel id nunc. Ultricies dui pharetra laoreet laoreet
                     laoreet habitasse iaculis lobortis. Amet diam dolor
@@ -51,8 +51,8 @@ export default function Technologies() {
               <div className="technologies__slide">
                 <div className="technologies__slide__content">
                   <img src={iconslide1} alt="" />
-                  <h3>Flutter</h3>
-                  <p>
+                  <h3 className="technologies__slide-title">Flutter</h3>
+                  <p className="technologies__slide-text">
                     Lorem ipsum dolor sit amet consectetur. Cursus cursus erat
                     massa vel id nunc. Ultricies dui pharetra laoreet laoreet
                     laoreet habitasse iaculis lobortis. Amet diam dolor
@@ -70,8 +70,8 @@ export default function Technologies() {
               <div className="technologies__slide">
                 <div className="technologies__slide__content">
                   <img src={iconslide1} alt="" />
-                  <h3>Diseño UX/UI</h3>
-                  <p>
+                  <h3 className="technologies__slide-title">Diseño UX/UI</h3>
+                  <p className="technologies__slide-text">
                     Lorem ipsum dolor sit amet consectetur. Cursus cursus erat
                     massa vel id nunc. Ultricies dui pharetra laoreet laoreet
                     laoreet habitasse iaculis lobortis. Amet diam dolor

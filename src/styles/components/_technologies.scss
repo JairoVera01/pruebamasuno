@@ -80,7 +80,7 @@
       color: #ffffff;
       border: none;
       cursor: pointer;
-      margin-top: 1.5rem;
+      margin-top: 1.8rem;
       margin-bottom: 1.5rem;
       width: 100%;
       &:hover {
@@ -94,6 +94,22 @@
       }
     }
   }
+  &__slide-title {
+    color: #d43e36;
+    /* WEB CYBERDAYS/Titulos/Titulo 1 */
+
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  &__slide-text {
+    color: #2e2e2e;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
   .splide__slide {
     width: 100%;
   }
@@ -101,6 +117,12 @@
   .splide__arrow--prev {
     border-radius: 0px;
     height: 3em;
+    fill: #ffffff;
+    svg {
+      &:hover {
+        fill: #ffffff;
+      }
+    }
   }
 
   .splide__arrow--prev {
@@ -127,8 +149,16 @@
   .splide__pagination__page {
     bottom: 27.5rem;
     right: 6.8rem;
+    margin-left: 0.4rem;
+    width: 13px;
+    border-radius: 50px;
+    height: 13px;
     @media (min-width: 992px) {
-      bottom: 15rem;
+      margin-left: 0.4rem;
+      width: 13px;
+      height: 13px;
+      border-radius: 50px;
+      bottom: 11.5rem;
       right: 47.5rem;
     }
   }
