@@ -71,7 +71,10 @@ export default function Hero() {
       toast.error("Debes aceptar los términos y condiciones");
       return;
     }
-
+    if (captchaValue === "") {
+      toast.error("Debes completar el captcha");
+      return;
+    }
     try {
       setSending(true); // Cambiar el estado de "sending" a true
       await addDoc(dataCollection, {
@@ -239,7 +242,7 @@ export default function Hero() {
             </div>
             <div className="hero__form-captcha">
               <ReCAPTCHA
-                sitekey="TU_CLAVE_DE_SITIO"
+                sitekey="6Lf1RZwnAAAAAMC3E3b1r1GxspFAa4pNGBJvUvKG"
                 onChange={(value) => setCaptchaValue(value)}
               />
             </div>
