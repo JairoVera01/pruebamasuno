@@ -13,7 +13,16 @@ export default function Hero() {
           </h1>
           <p className="hero__dates">Del 28 al 30 de marzo</p>
           <div className="hero__cupon">
-            <span>Registrate y obten</span>
+            <div className="hero__border">
+              <span className="hero__cupon-title">Regístrate y obtén</span>
+              <div className="hero__percentage">
+                <span className="hero__percentage-number">10%</span>
+                <span className="hero__percentage-text">
+                  En tu primera <br /> compra de <br />
+                  <span>CYBER DAY</span>
+                </span>
+              </div>
+            </div>
           </div>
         </div>
         <div className="hero__form">Item2</div>
