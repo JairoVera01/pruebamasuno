@@ -15,6 +15,7 @@ export default function Hero() {
   const [favorite, setFavorite] = useState("");
   const [terms, setTerms] = useState(false);
   const [data, setData] = useState(false);
+  const [sending, setSending] = useState(false); // Nuevo estado para enviar formulario
   //Funcion para obtener fecha y hora
   const getDateTime = () => {
     const date = new Date();
@@ -72,6 +73,7 @@ export default function Hero() {
     }
 
     try {
+      setSending(true); // Cambiar el estado de "sending" a true
       await addDoc(dataCollection, {
         name: name,
         lastName: lastName,
@@ -94,6 +96,7 @@ export default function Hero() {
       setFavorite("");
       setTerms(false);
       setData(false);
+      setSending(false); // Cambiar el estado de "sending" a false
     }
   };
 
@@ -241,8 +244,9 @@ export default function Hero() {
                 type="button"
                 className="hero__form-button"
                 onClick={() => sendData()}
+                disabled={sending} // Deshabilitar el botón si "sending" es true
               >
-                Registrarme
+                {sending ? "Enviando información..." : "Registrarme"}
               </button>
             </div>
             <p className="hero__form-text">
