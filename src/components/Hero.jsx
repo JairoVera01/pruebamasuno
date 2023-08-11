@@ -1,4 +1,5 @@
 import icon1 from "../assets/images/IconosHero.png";
+import subrayadoRojo from "../assets/images/subrayadoRojo.png";
 export default function Hero() {
   return (
     <section className="hero">
@@ -8,9 +9,13 @@ export default function Hero() {
             <img src={icon1} alt="" />
             <span className="hero__icons-1__text">ES HORA DE</span>
           </div>
-          <h1 className="hero__title">
-            CYBER DAYS <br /> EN Más Uno
-          </h1>
+          <div className="hero__container-title">
+            <h1 className="hero__title">
+              CYBER DAYS <br /> EN Más Uno
+            </h1>
+            <img src={subrayadoRojo} alt="" />
+          </div>
+
           <p className="hero__dates">Del 28 al 30 de marzo</p>
           <div className="hero__cupon">
             <div className="hero__border">
@@ -33,7 +38,9 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="hero__form">Item2</div>
+        <div className="hero__form">
+          <h2>Completa tus datos</h2>
+        </div>
       </div>
     </section>
   );
