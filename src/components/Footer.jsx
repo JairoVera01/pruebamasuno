@@ -3,7 +3,6 @@ import Social1 from "../assets/images/IconFooter1.png";
 import Social2 from "../assets/images/IconFooter2.png";
 import Social3 from "../assets/images/IconFooter3.png";
 export default function Footer() {
-  
   return (
     <section className="footer">
       <div className="footer__container container">
@@ -60,9 +59,9 @@ export default function Footer() {
             <span>000 000 000</span>
           </div>
           <div className="footer__content-3__socials">
-            <img src={Social1} alt="" />
-            <img src={Social2} alt="" />
-            <img src={Social3} alt="" />
+            <img src={Social1} alt="Icono Social de Facebook" />
+            <img src={Social2} alt="Icono Social de Linkedin" />
+            <img src={Social3} alt="Icono Social de Twitter" />
           </div>
           <span className="footer__content-3__copy">
             © 2022 Mas uno Lima - Perú

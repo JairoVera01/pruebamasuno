@@ -4,14 +4,14 @@ export default function Steps() {
   return (
     <section className="steps container">
       <div className="steps__separator">
-        <img src={iconSteps} alt="" />
+        <img src={iconSteps} alt="Iconos de Cyber Days " />
       </div>
       <div className="steps__content">
         <div className="steps__wrapper">
           <h2 className="steps__title">
             ¿Como obtengo el descuento por Cyber Days?
           </h2>
-          <img src={subrayadoRojo} alt="" />
+          <img src={subrayadoRojo} alt="Icono de subrayado rojo" />
           <span className="steps__subtitle">
             Para adquirir nuestro descuento especial por
             <span className="steps__subtitle--mod"> Cyber Days </span>

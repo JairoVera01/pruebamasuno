@@ -6,14 +6,14 @@ export default function Hero() {
       <div className="hero__wrapper container">
         <div className="hero__content">
           <div className="hero__icons-1">
-            <img src={icon1} alt="" />
+            <img src={icon1} alt="Iconos descriptivos" />
             <span className="hero__icons-1__text">ES HORA DE</span>
           </div>
           <div className="hero__container-title">
             <h1 className="hero__title">
               CYBER DAYS <br /> EN Más Uno
             </h1>
-            <img src={subrayadoRojo} alt="" />
+            <img src={subrayadoRojo} alt="Linea Roja de subrayado" />
           </div>
 
           <p className="hero__dates">Del 28 al 30 de marzo</p>
@@ -40,7 +40,6 @@ export default function Hero() {
         </div>
         <div className="hero__form">
           <h2 className="hero__form-title">Completa tus datos</h2>
-
           <form action="">
             <div className="hero__form-container">
               <div className="hero__form-input">
