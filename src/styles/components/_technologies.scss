@@ -1,5 +1,4 @@
 .technologies {
-  padding-bottom: 60px;
   &__wrapper {
     display: flex;
 
@@ -127,6 +126,10 @@
     font-weight: 600;
     line-height: normal;
   }
+  .splide {
+    padding-bottom: 0;
+    overflow: hidden;
+  }
   .splide__slide {
     width: 100%;
   }
@@ -164,18 +167,18 @@
     }
   }
   .splide__pagination__page {
-    bottom: 27.5rem;
+    bottom: 24.5rem;
     right: 6.8rem;
     margin-left: 0.4rem;
-    width: 13px;
+    width: 12px;
     border-radius: 50px;
-    height: 13px;
+    height: 12px;
     @media (min-width: 992px) {
       margin-left: 0.4rem;
       width: 13px;
       height: 13px;
       border-radius: 50px;
-      bottom: 11.5rem;
+      bottom: 9rem;
       right: 47.5rem;
     }
   }

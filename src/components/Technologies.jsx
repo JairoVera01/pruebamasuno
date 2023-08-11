@@ -4,14 +4,14 @@ import slide2 from "../assets/images/slide-2.jpg";
 import slide3 from "../assets/images/slide-3.jpg";
 import LogoMasUno from "../assets/images/IconBrand.png";
 import iconslide1 from "../assets/images/icon-slide-1.png";
-import subrayadoRojo from "../assets/images/subrayadoRojo.png";
+import subrayadoRojo from "../assets/images/SubrayadoRojo.png";
 
 export default function Technologies() {
   return (
     <section className="technologies">
       <div className="technologies__container ">
         <div className="technologies__wrapper container">
-          <img src={LogoMasUno} alt="" className="technologies__logomasuno"/>
+          <img src={LogoMasUno} alt="" className="technologies__logomasuno" />
           <h2 className="technologies__title">
             Las mejores tecnologias de Más uno
           </h2>
