@@ -1,7 +1,13 @@
+import Hero from "./components/Hero";
+import Layout from "./layouts/Layout";
+
 function App() {
   return (
     <>
-      <h1>Prueba</h1>
+      <Layout>
+        <Hero />
+        <h1>App</h1>
+      </Layout>
     </>
   );
 }
