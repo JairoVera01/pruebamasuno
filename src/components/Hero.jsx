@@ -39,7 +39,26 @@ export default function Hero() {
           </div>
         </div>
         <div className="hero__form">
-          <h2>Completa tus datos</h2>
+          <h2 className="hero__form-title">Completa tus datos</h2>
+
+          <form action="" className="hero__form-container">
+            <div className="hero__form-input">
+              <label htmlFor="name">Nombres *</label>
+              <input type="text" name="name" id="name" />
+            </div>
+            <div className="hero__form-input">
+              <label htmlFor="name">Apellidos *</label>
+              <input type="text" name="name" id="name" />
+            </div>
+            <div className="hero__form-input">
+              <label htmlFor="name">Teléfono *</label>
+              <input type="text" name="name" id="name" />
+            </div>
+            <div className="hero__form-input">
+              <label htmlFor="name">Correo electrónico *</label>
+              <input type="text" name="name" id="name" />
+            </div>
+          </form>
         </div>
       </div>
     </section>
