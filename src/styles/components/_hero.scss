@@ -1,0 +1,31 @@
+.hero {
+  // Vista de móvil
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-color: #1a36a8;
+  @media (min-width: 768px) {
+    // Vista de tablet
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  @media (min-width: 1024px) {
+    // Vista de escritorio
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  &__content {
+    h1 {
+      color: white;
+    }
+  }
+}
