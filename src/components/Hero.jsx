@@ -41,23 +41,94 @@ export default function Hero() {
         <div className="hero__form">
           <h2 className="hero__form-title">Completa tus datos</h2>
 
-          <form action="" className="hero__form-container">
-            <div className="hero__form-input">
-              <label htmlFor="name">Nombres *</label>
-              <input type="text" name="name" id="name" />
+          <form action="">
+            <div className="hero__form-container">
+              <div className="hero__form-input">
+                <label className="hero__form-input-label" htmlFor="name">
+                  Nombres *
+                </label>
+                <input
+                  className="hero__form-input-field"
+                  type="text"
+                  name="name"
+                  id="name"
+                />
+              </div>
+              <div className="hero__form-input">
+                <label className="hero__form-input-label" htmlFor="name">
+                  Apellidos *
+                </label>
+                <input
+                  className="hero__form-input-field"
+                  type="text"
+                  name="name"
+                  id="name"
+                />
+              </div>
+              <div className="hero__form-input">
+                <label className="hero__form-input-label" htmlFor="name">
+                  Teléfono *
+                </label>
+                <input
+                  className="hero__form-input-field"
+                  type="text"
+                  name="name"
+                  id="name"
+                />
+              </div>
+              <div className="hero__form-input">
+                <label className="hero__form-input-label" htmlFor="name">
+                  Correo electrónico *
+                </label>
+                <input
+                  className="hero__form-input-field"
+                  type="text"
+                  name="name"
+                  id="name"
+                />
+              </div>
+              <div className="hero__form-input">
+                <label className="hero__form-input-label" htmlFor="name">
+                  Tus favoritos
+                </label>
+                {/* Select input */}
+                <select
+                  className="hero__form-input-field"
+                  name="favorites"
+                  id="favorites"
+                >
+                  <option value="pollo">Pollo</option>
+                  <option value="cerdo">Cerdo</option>
+                  <option value="res">Res</option>
+                  <option value="pescado">Pescado</option>
+                </select>
+              </div>
             </div>
-            <div className="hero__form-input">
-              <label htmlFor="name">Apellidos *</label>
-              <input type="text" name="name" id="name" />
+            <div className="hero__form-checks">
+              <div className="hero__form-check">
+                <input type="checkbox" name="terms" id="terms" />
+                <label className="hero__form-check-label" htmlFor="terms">
+                  Acepto los <span>Términos y políticas de privacidad</span>
+                </label>
+              </div>
+              <div className="hero__form-check">
+                <input type="checkbox" name="terms" id="terms" />
+                <label className="hero__form-check-label" htmlFor="terms">
+                  Acepto el <span>Uso de datos personales</span>
+                </label>
+              </div>
             </div>
-            <div className="hero__form-input">
-              <label htmlFor="name">Teléfono *</label>
-              <input type="text" name="name" id="name" />
+            <div className="hero__form-button-container">
+              <button type="button" className="hero__form-button">
+                Registrarme
+              </button>
             </div>
-            <div className="hero__form-input">
-              <label htmlFor="name">Correo electrónico *</label>
-              <input type="text" name="name" id="name" />
-            </div>
+            <p className="hero__form-text">
+              Aprovecha las mejores ofertas y descuentos en cerdo, congelados,
+              embutidos y <span>mucho más. </span>
+              No te pierdas de nada estos Cyberdays registrándote y obteniendo
+              grandes descuentos exclusivos.
+            </p>
           </form>
         </div>
       </div>
